@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Elements</title>
+    <link rel="stylesheet" href="assets/styles/tables.css">
+</head>
+<body>
+    <!-- Table Elements
+            table = parent element
+            tr = table row (row)
+            th = table header (column title/heading)
+            td = table data (column data)
+
+            attributes:
+                colspan = merge column cells
+                rowspan = merge row cells
+
+            grouping elements for table
+                thead
+                tbody
+                tfoot
+
+    -->
+    <h2>Table 1 using th</h2>
+    <table  width="300px" class="table-1">
+        <tr>
+            <th>title1</th>
+            <th>title2</th>
+            <th></th>
+            <th>title4</th>
+        </tr>
+    </table>
+
+    <h2>Table 2 using td</h2>
+    <table border="1" width="500px" class="table-2">
+        <tr>
+            <td>data1</td>
+            <td></td>
+            <td>data2</td>
+            <td>Lorem ipsum dolor sit.</td>
+        </tr>
+    </table>
+
+    <h3>Table 3 using th and td</h3>
+    <table border="1" width="50%" class="table-3">
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Age</th>
+            <th>Contact Number</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>Los Angeles, California</td>
+            <td></td>
+            <td>8423084023483</td>
+        </tr>
+        <tr>
+            <td>Erick Adam</td>
+            <td>Nebraska</td>
+            <td>35</td>
+            <td>9504594054545</td>
+        </tr>
+    </table>
+
+    <h2>Table 4 using colspan</h2>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th colspan="2">Contact Numbers</th>
+            <!-- <th></th> -->
+        </tr>
+        <tr>
+            <td>Bill Gates</td>
+            <td>80282034830</td>
+            <td>94-039-4595</td>
+        </tr>
+        <tr>
+            <td>Steve Jobs</td>
+            <td>47593457454</td>
+            <td>83423084023</td>
+        </tr>
+    </table>
+
+    <h2>Table 5 using rowspan</h2>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <td>Bill Gates</td>
+            <td>Steve Jobs</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Contact Numbers</th>
+            <td>8450348503458</td>
+            <td>4803482034834</td>
+        </tr>
+        <tr>
+            <!-- <th></th> -->
+            <td>8024820348234</td>
+            <td>3534234234233</td>
+        </tr>
+    </table>
+
+    <h2>Table 6 using thead,tbody, and tfoot</h2>
+    <table border="1" class="table-6">
+        <thead>
+            <tr>
+                <th>title1</th>
+                <th>title2</th>
+                <th>title3</th>
+            </tr>
+            <tr>
+                <th>subtitle1</th>
+                <th>subtitle2</th>
+                <th>subtitle3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+            </tr>
+            <tr>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>total1</th>
+                <th>total2</th>
+                <th>total3</th>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
